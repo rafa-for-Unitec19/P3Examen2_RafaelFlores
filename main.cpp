@@ -3,6 +3,7 @@
 #include <fstream>
 #include "Relacion.hpp"
 #include "Tupla.hpp"
+#include <iomanip>
 
 using namespace std;
 
@@ -93,20 +94,22 @@ void listarRelacion(int pos){
     for (size_t i = 0; i < relaciones[pos].getEncabezado().size(); i++){
         if (!i){
             cout << relaciones[pos].getNombre() << endl;
-        }
-        cout << relaciones[pos].getEncabezado()[i] << " -> ";
+            cout << setfill(' ') << setw(6) << relaciones[pos].getEncabezado()[i] << " -> ";
+        }else{
+            cout << setfill(' ') << setw(15) << relaciones[pos].getEncabezado()[i] << " -> ";
+        } 
     }
-    cout << "\n";
+    cout << "|\n";
     if (relaciones[pos].getTupla().empty())
     {
         cout << "Esta Relacion no tiene Tuplas" << endl;
     }else{
         for (size_t i = 0; i < relaciones[pos].getTupla().size(); i++)
         {
-            cout << "| " << relaciones[pos].getTupla()[i].getid() << " | ";
+            cout << "| " << setfill(' ') << setw(6) << relaciones[pos].getTupla()[i].getid() << " | ";
             for (size_t j = 0; j < relaciones[pos].getTupla()[i].getAttrib().size(); j++)
             {
-                cout << relaciones[pos].getTupla()[i].getAttrib()[j] << " | ";
+                cout << setfill(' ') << setw(15) << relaciones[pos].getTupla()[i].getAttrib()[j] << " | ";
             }
             cout << endl;
         }

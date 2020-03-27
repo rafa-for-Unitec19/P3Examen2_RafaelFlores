@@ -2,3 +2,7 @@ Estudiante
 Id+Nombre+Edad+Sexo+Instituo
 Universidad
 Id+Nombre+Antiguedad
+Aula
+Id+Piso+Observacion
+Amigos
+Id+Nombre+Alma
