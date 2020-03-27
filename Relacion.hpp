@@ -16,12 +16,18 @@ class Relacion{
         void setEncabezado(string enc){
             this->encabezado.push_back(enc);
         };
-        void initTupla(){
+        void initTupla(bool tipo = false){
             Tupla temp;
+            if(tipo){
+                temp.setOrigId();
+            }
             this->atributos.push_back(temp);
         };
         void setTuplaAtt(string att){
             this->atributos[atributos.size() - 1].setAttrib(att);
+        };
+        void setTuplaId(int id){
+            this->atributos[atributos.size() - 1].setId(id);
         };
         vector<string> getEncabezado(){
             return encabezado;
@@ -29,6 +35,9 @@ class Relacion{
         vector<Tupla> getTupla(){
             return atributos;
         };
+        string getNombre(){
+            return nombre;
+        }
 };
 
 #endif

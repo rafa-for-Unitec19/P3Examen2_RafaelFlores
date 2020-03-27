@@ -1,0 +1,4 @@
+Estudiante
+Id+Nombre+Edad+Sexo+Instituo
+Universidad
+Id+Nombre+Antiguedad

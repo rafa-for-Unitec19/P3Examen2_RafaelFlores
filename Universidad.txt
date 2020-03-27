@@ -1,0 +1,4 @@
+1001+Nombre1+Antiguedad1
+1002+Nombre2+Antiguedad2
+1003+Nombre3+Antiguedad3
+8168+UNitec+20 anios

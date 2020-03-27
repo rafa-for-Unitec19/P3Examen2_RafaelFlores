@@ -1,0 +1,6 @@
+1001+Nombre1+Edad1+Sexo1+Instituto1
+1002+Nombre2+Edad2+Sexo2+Instituto2
+1003+Nombre3+Edad3+Sexo3+Instituto3
+1004+Nombre4+Edad4+Sexo4+Instituto4
+1005+Nombre5+Edad5+Sexo5+Instituto5
+5226+Eduardo+21+Maculino+Unitec
